@@ -1,24 +1,26 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+
+import logo from ".assets/logo.svg";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+    <div className="container">
+      <img src={logo} alt="Konnectus" />
+
+      <div className="content">
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Solucione suas demandas pontuais de forma rápida{" "}
+          <strong>prática</strong> e <strong></strong>eficiente
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <form>
+          <label htmlFor="user">Usuário</label>
+          <input type="user" id="user" placeholder="Usuário" />
+          <label htmlFor="password">Senha</label>
+          <input type="password" id="password" placeholder="Senha" />
+          <button type="submit">Entrar</button>
+        </form>
+      </div>
     </div>
   );
 }
